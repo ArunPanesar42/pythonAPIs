@@ -1,11 +1,4 @@
-# Python APIs
-## Using a library API to find out book publishers 
-
-- I've done this by getting the ISBN
-
-### Create the Api Method file
-- here is the file we created
-```python
+# API for books
 import requests
 
 class get_book():
@@ -30,22 +23,6 @@ class get_book():
         # for items in response_keys.keys():
         print(f"the publisher of your book is: {response_keys[0]}")
 
-```
- ### Then get the file where we store the book information
 
-- here is the book details file 
-```python
-from python_api_books import get_book
 
-book_isbn = "9780140328721.json"
-get_book(book_isbn)
 
-```
-
-- this is our result 
-
-````
-the publisher of your book is: Puffin
-
-This website is running and the code is: 200
-````
